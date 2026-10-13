@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chagihsz-cyber.github.io/devy-studio-express/sitemap.xml

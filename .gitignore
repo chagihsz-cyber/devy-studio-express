@@ -1,0 +1,6 @@
+_*.py
+PERFIL_WORKANA_PRONTO.md
+PROPOSTAS_WORKANA_PENDENTES.md
+preview-v2/*.md
+preview-v2/conceitos.json
+**/*qa*.png
