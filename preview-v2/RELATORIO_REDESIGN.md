@@ -39,3 +39,10 @@ Gate: pelo menos três eixos mudam entre cada conceito (ordem, navegação, apre
 - Verificação HTTP 200 de prévia publicada.
 - Captura mobile/desktop e análise de legibilidade, se navegador de teste estiver disponível.
 - Revisão visual final e aceite humano **antes de substituir index.html público**.
+
+## QA real — 13/10/2026
+- Verificador textual anticlone em três direções documentadas: PASS (com ressalva de revisão visual humana).
+- Inspeção de HTMLParser: sem IDs duplicados, âncoras internas íntegras, imagens locais presentes, quatro mailto, CSS de mobile e rótulos de demonstração: 8/8 PASS.
+- GitHub Pages da prévia: build `built`, página e dois recursos WebP com HTTP 200. A versão principal permaneceu HTTP 200 e não foi substituída.
+- Chrome real em modo headless no Bazzite: screenshot da abertura em 390×844 e 1440×900; resultados visualmente legíveis, sem colisão observada na primeira dobra. Evidências locais externas ao repositório em `/home/charlito/dev/devy-vendas-express-QA/`.
+- Não houve teste integral de teclado com leitor de tela, validação externa de acessibilidade, consulta a clientes ou homologação comercial. Não declarar produção homologada.
