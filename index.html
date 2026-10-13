@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="devY Studio: sites, vitrines e cardápios digitais feitos sob medida para pequenos negócios.">
+<meta name="theme-color" content="#0b1010">
+<title>devY Studio — Sites que fazem seu negócio aparecer</title>
+<style>
+:root{--bg:#0b1010;--panel:#141c1a;--ink:#edf8ed;--soft:#aabbb3;--mint:#a8ed75;--stroke:#314339;--cream:#fcf7e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:0}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}header,.wrap,footer{max-width:1180px;margin:auto;padding-inline:28px}
+header{display:flex;align-items:center;justify-content:space-between;padding-top:25px;padding-bottom:25px;border-bottom:1px solid #223129}
+.logo{font-size:29px;letter-spacing:-2px;font-weight:850;line-height:1}.logo span{color:var(--mint)}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--mint)}
+.nav{display:flex;gap:28px;align-items:center}.nav a:not(.cta){color:var(--soft);font-size:14px}.nav a:hover{color:white}
+.cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--mint);color:#0c160e!important;border:1px solid var(--mint);padding:13px 20px;font-weight:800;border-radius:11px;transition:transform .15s}.cta:hover,.btn:hover{transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--ink)!important;border-color:var(--stroke)}.btn-outline:hover{border-color:var(--mint)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding-block:90px 100px}.hero h1{font-size:clamp(44px,6.1vw,80px);letter-spacing:-.067em;line-height:1.05;margin:18px 0 27px;max-width:750px}
+.hero h1 em{font-style:normal;color:var(--mint)}.lead{font-size:19px;max-width:580px;color:var(--soft);line-height:1.6}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.micro{font-size:13px;color:#8eab99;margin-top:22px}.pill{display:inline-block;font-size:12px;border:1px solid var(--stroke);border-radius:100px;padding:6px 13px;color:var(--soft)}
+.browser{border:1px solid #4b6654;border-radius:23px;overflow:hidden;background:#1e2922;box-shadow:0 33px 110px #0007;transform:rotate(2deg)}.browser-head{padding:15px 18px;background:#18211c;display:flex;gap:7px;align-items:center;border-bottom:1px solid #435747}.dot{width:9px;height:9px;border-radius:50%;background:#5e6e61}.url{font-size:11px;color:#84998c;margin-left:14px}
+.preview{padding:25px;background:linear-gradient(135deg,#ece8d9,#fdf7ec);color:#1b251d;min-height:470px}.preview-nav{display:flex;justify-content:space-between;align-items:center;font-weight:800}.preview-nav small{font-size:9px;letter-spacing:2px}
+.preview-hero{margin-top:30px;background:#26392b;border-radius:14px;color:#fff;padding:25px;min-height:172px}.preview-hero strong{font-family:Georgia,serif;font-size:35px;line-height:1.04;display:block;margin:8px 0}.preview-tag{font-size:9px;letter-spacing:.14em;color:#bfec8f}.preview-hero p{font-size:12px;color:#d8dacc}.fake-btn{background:#d6ef86;border-radius:7px;color:#152615;padding:8px 13px;font-size:11px;display:inline-block;font-weight:750}
+.dishes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}.dish{background:white;border-radius:12px;padding:16px;min-height:130px;display:flex;flex-direction:column;justify-content:space-between}.dish b{font-size:14px}.dish small{font-size:11px;color:#637064}.dish span{align-self:flex-end;font-weight:900;font-size:15px}
+.strip{border-top:1px solid var(--stroke);border-bottom:1px solid var(--stroke);display:grid;grid-template-columns:repeat(3,1fr);gap:25px;padding-block:25px}.strip div{display:flex;gap:12px;align-items:center}.strip b{font-size:14px}.strip span{font-size:13px;color:var(--soft)}
+section{padding-top:90px}.section-head{max-width:710px}.section-head h2{font-size:clamp(32px,4vw,50px);letter-spacing:-.055em;line-height:1.12;margin:13px 0 16px}.section-head p{color:var(--soft)}
+.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}.offer{border:1px solid var(--stroke);border-radius:20px;padding:30px;background:var(--panel);display:flex;flex-direction:column;min-height:470px}.offer.highlight{border-color:#b2f185;background:linear-gradient(180deg,#20352a,#141c1a)}.offer .number{color:var(--soft);font-size:12px;letter-spacing:.12em}.offer h3{font-size:24px;letter-spacing:-.04em;margin:15px 0 5px}.offer .sub{font-size:13px;color:var(--soft);min-height:60px}.price{font-size:40px;letter-spacing:-.045em;font-weight:800;margin:18px 0 14px}.price small{font-size:13px;font-weight:500;color:var(--soft)}.offer ul{margin:0 0 28px;padding-left:18px;color:#d0dbd4;flex:1}.offer li{margin:12px 0;font-size:14px}.offer .btn{width:100%}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}.step{padding:25px;border:1px solid var(--stroke);border-radius:15px}.step strong{font-size:29px;color:var(--mint);display:block}.step b{display:block;font-size:18px;margin:18px 0 8px}.step p{font-size:14px;color:var(--soft);margin:0}
+.bottom{margin-top:98px;border:1px solid #729663;border-radius:24px;padding:50px;background:radial-gradient(ellipse at 93% 0%,#36513a,transparent 52%),#1b2b20}.bottom h2{font-size:clamp(34px,4vw,54px);letter-spacing:-.05em;line-height:1.12;max-width:700px;margin:14px 0 20px}.bottom p{color:#c4d8c8;max-width:660px}
+footer{display:flex;justify-content:space-between;gap:16px;padding-block:40px;margin-top:60px;border-top:1px solid var(--stroke);font-size:13px;color:var(--soft)}.fine{font-size:12px;color:#96aa9b}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.browser{transform:none;max-width:590px}.offer-grid{grid-template-columns:1fr}.offer{min-height:unset}.steps{grid-template-columns:1fr}.strip{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){header,.wrap,footer{padding-inline:19px}.nav a:not(.cta){display:none}.hero{padding-block:54px 75px;gap:35px}.lead{font-size:16px}.browser{border-radius:15px}.preview{min-height:390px;padding:15px}.preview-hero{padding:18px;min-height:150px}.preview-hero strong{font-size:27px}.dishes{gap:7px}.dish{min-height:120px;padding:11px}.strip{grid-template-columns:1fr}section{padding-top:65px}.bottom{padding:30px 22px;margin-top:60px}footer{flex-direction:column}.cta{padding:10px 13px;font-size:13px}}
+</style>
+</head>
+<body>
+<header><a class="logo" href="#inicio" aria-label="devY Studio">dev<span>Y</span><span style="font-size:11px;letter-spacing:1px;font-weight:600;color:#a4b4a7;margin-left:8px">STUDIO</span></a>
+<nav class="nav"><a href="#servicos">Soluções</a><a href="#como">Como funciona</a><a class="cta" href="#contato">Pedir orçamento ↗</a></nav></header>
+<main>
+<div class="wrap">
+<section class="hero" id="inicio">
+<div><span class="pill">Design pensado para pequenos negócios</span><div class="eyebrow" style="margin-top:22px">Presença digital sem complicação</div>
+<h1>Seu negócio merece um site <em>à altura.</em></h1>
+<p class="lead">Criamos vitrines digitais, sites comerciais e cardápios personalizados para você apresentar produtos, organizar pedidos e ser encontrado pelos clientes.</p>
+<div class="actions"><a class="btn" href="#servicos">Conhecer soluções <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="#como">Entenda o processo</a></div>
+<p class="micro">Orçamento claro · Layout responsivo · Implantação conforme escopo aprovado</p>
+</div>
+<div class="browser" aria-label="Ilustração demonstrativa de site de restaurante">
+<div class="browser-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">Exemplo de interface · conceito visual</span></div>
+<div class="preview"><div class="preview-nav"><div>casa<span style="color:#7d9d52">.</span>mesa</div><small>MENU · PEDIDOS</small></div>
+<div class="preview-hero"><div class="preview-tag">FEITO COM SABOR</div><strong>Seu cardápio,<br>com personalidade.</strong><p>Uma experiência melhor desde o primeiro clique.</p><span class="fake-btn">Ver cardápio →</span></div>
+<div class="dishes"><div class="dish"><div><b>Prato da casa</b><br><small>Artesanal · feito na hora</small></div><span>R$ 39</span></div><div class="dish"><div><b>Especial do dia</b><br><small>Receita especial</small></div><span>R$ 46</span></div></div>
+</div></div></section>
+<div class="strip"><div><b>01</b><span>Experiência adaptada ao celular</span></div><div><b>02</b><span>Identidade visual do seu negócio</span></div><div><b>03</b><span>Organização para vendas e contatos</span></div></div>
+<section id="servicos"><div class="section-head"><span class="eyebrow">Soluções comerciais</span><h2>Escolha o formato certo para o momento da sua empresa.</h2><p>Valores de referência para escopos definidos. Hospedagem, domínio, integrações externas e manutenção são tratados no orçamento.</p></div>
+<div class="offer-grid">
+<article class="offer"><div class="number">ESSENCIAL / 01</div><h3>Vitrine Express</h3><div class="sub">Para profissionais e negócios que precisam de uma apresentação profissional.</div><div class="price">R$ 790 <small>/ projeto</small></div><ul><li>Página única responsiva</li><li>Serviços, fotos e apresentação</li><li>Botão de contato e localização</li><li>1 rodada de ajustes simples</li></ul><a class="btn btn-outline" data-offer="Vitrine Express - R$ 790" href="#contato">Solicitar proposta ↗</a></article>
+<article class="offer highlight"><div class="number">MAIS PROCURADO / 02</div><h3>Cardápio Digital</h3><div class="sub">Para restaurantes, lanchonetes e delivery que precisam mostrar seu catálogo.</div><div class="price">R$ 1.250 <small>/ projeto</small></div><ul><li>Cardápio navegável por categorias</li><li>Fotos, descrições e preços</li><li>Contato ou pedidos via WhatsApp</li><li>Customização visual e treinamento breve</li></ul><a class="btn" data-offer="Cardápio Digital - R$ 1.250" href="#contato">Solicitar proposta ↗</a></article>
+<article class="offer"><div class="number">SOB MEDIDA / 03</div><h3>Site Comercial</h3><div class="sub">Para negócios que querem uma experiência visual completa, com páginas extras.</div><div class="price">R$ 2.500 <small>/ a partir de</small></div><ul><li>Arquitetura de páginas e conteúdo</li><li>Projeto visual personalizado</li><li>Formulário, contato ou integrações sob análise</li><li>Publicação e suporte inicial a combinar</li></ul><a class="btn btn-outline" data-offer="Site Comercial - a partir de R$ 2.500" href="#contato">Solicitar proposta ↗</a></article>
+</div></section>
+<section id="como"><div class="section-head"><span class="eyebrow">Sem surpresas</span><h2>Um processo simples. Entregas definidas.</h2></div>
+<div class="steps"><article class="step"><strong>01.</strong><b>Conversa e diagnóstico</b><p>Entendemos seu público, os materiais disponíveis e o objetivo da página.</p></article>
+<article class="step"><strong>02.</strong><b>Proposta e sinal</b><p>Você recebe escopo, preço, prazo e condições. Início após aceitação e pagamento combinado.</p></article>
+<article class="step"><strong>03.</strong><b>Criação e validação</b><p>Construímos, testamos no celular e publicamos após a aprovação do material.</p></article></div></section>
+<section class="bottom" id="contato"><span class="eyebrow">Seu próximo passo</span><h2>Vamos colocar seu negócio em destaque?</h2><p>Conte o que você vende, a cidade e a solução desejada. Respondemos com proposta e prazo conforme disponibilidade. Nenhuma compra ou cobrança acontece automaticamente neste site.</p>
+<div class="actions"><a id="request" class="btn" href="mailto:chagihsz+devy@gmail.com?subject=Orcamento%20devY%20Studio&body=Ola%2C%20gostaria%20de%20um%20orcamento%20para%20meu%20negocio.">Pedir orçamento por e-mail ↗</a></div>
+<p class="fine">Atendimento mediante disponibilidade · Projetos contratados sob escopo · Este é um catálogo comercial, não uma plataforma de pagamento.</p></section>
+</div></main>
+<footer><div><strong>devY Studio</strong><div>Sites comerciais e experiências digitais.</div></div><div>© 2026 · Projetos e valores sujeitos a proposta formal.</div></footer>
+<script>
+let chosen='';document.querySelectorAll('[data-offer]').forEach(a=>a.addEventListener('click',()=>{chosen=a.dataset.offer;setMail()}));
+function setMail(){const subject='Orçamento devY Studio'+(chosen?' — '+chosen:'');const body='Olá! Quero saber mais sobre '+(chosen||'um site para meu negócio')+'.\n\nMeu negócio:\nMinha cidade:\nMeu prazo:\nMeu contato:';document.getElementById('request').href='mailto:chagihsz+devy@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body)}
+setMail();
+</script>
+</body>
+</html>
