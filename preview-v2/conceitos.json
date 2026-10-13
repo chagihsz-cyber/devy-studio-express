@@ -1,0 +1,28 @@
+{
+  "concepts": [
+    {
+      "name": "A — Editorial em ação (selecionado e implementado)",
+      "architecture": "Manifesto tipografico na abertura, dois estudos autorais destacados, tabela de serviços e processo linear com contato em rodape",
+      "navigation": "Menu com ancoras curtas para conceitos, servicos, metodo; mobile reduz itens do cabecalho e mantém contato visivel",
+      "product_layout": "Dois projetos de tamanhos generosos com capturas de tela e legenda explicita, seguidos de linhas de oferta com preco a direita",
+      "conversion": "CTA circular no manifesto e acao por linha de serviço via email com assunto especifico, sem carrinho",
+      "visual_language": "Papel claro, tinta grafite, coral industrial, manchetes sans concentradas e Georgia italic; linhas editoriais sem cards arredondados"
+    },
+    {
+      "name": "B — Tabela técnica de propostas",
+      "architecture": "Consulta de necessidade primeiro, matriz de recursos versus pacotes, escopo e FAQ antes de galeria curta de conceitos",
+      "navigation": "Navegacao por problema do cliente, com busca por categoria e tabela de comparacao de servicos",
+      "product_layout": "Matriz comparativa de pacotes e funcionalidades por linha; imagens pequenas de referência em sidebar",
+      "conversion": "Usuario monta checklist, copia um resumo e solicita proposta personalizada com escopo delimitado",
+      "visual_language": "Monocromatico de alta densidade, estilo documentação de engenharia e marcadores tipograficos sem imagens hero"
+    },
+    {
+      "name": "C — Vitrine de projetos primeiro",
+      "architecture": "Galeria visual em tela cheia abre a pagina e troca cases antes do texto institucional, seguida por historico de processo",
+      "navigation": "Tabs ou setas de case em tela, menu contextual de projetos, navegação horizontal no desktop",
+      "product_layout": "Galeria de previews com movimento contido, focada em capturas amplas e storyboards mobile de cada experiência",
+      "conversion": "Contato dentro de cada case e formulario guiado por ramo comercial, sem preco imediato",
+      "visual_language": "Fotografias de trabalho em grande escala, tipografia serifada, fundo preto e tratamento de cor por projeto"
+    }
+  ]
+}
