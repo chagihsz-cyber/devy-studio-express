@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
-
+Disallow: /preview-v2/
+Disallow: /versao-anterior/
+Disallow: /demos/
 Sitemap: https://chagihsz-cyber.github.io/devy-studio-express/sitemap.xml

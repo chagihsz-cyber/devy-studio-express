@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://chagihsz-cyber.github.io/devy-studio-express/</loc><lastmod>2026-10-13</lastmod></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/index.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/servicos.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/projetos.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/midia.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/templates.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/apps.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/motoquinha.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/modelos-ia.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/sobre.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/contato.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/privacidade.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/servico-aplicativos.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/servico-automacoes.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/servico-cardapio.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/servico-midias.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/servico-modelos-ia.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/servico-site.html</loc></url>
+  <url><loc>https://chagihsz-cyber.github.io/devy-studio-express/servico-vitrine.html</loc></url>
+</urlset>
