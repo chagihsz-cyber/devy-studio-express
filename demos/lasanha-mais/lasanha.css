@@ -52,18 +52,3 @@ html{scroll-padding-top:24px}
 .fine{font-size:12px!important;color:#705240!important}
 footer span,footer small{font-size:12px;color:#685044}
 @media(max-width:420px){.header-link{font-size:11px}}
-
-/* Produto é a primeira prova visual em telas pequenas; pedido intacto. */
-@media(max-width:740px){
- .hero{display:flex;flex-direction:column}
- .hero .picture{order:0;min-height:365px;height:365px;padding:15px 14px 50px;overflow:hidden}
- .hero .intro{order:1;padding:32px 6vw 40px}
- .picture:before{inset:14% 12% 7%;border-radius:38% 49% 37% 48%}
- .hero .photo-frame{width:min(330px,79vw);height:315px;transform:rotate(-3deg);border-width:8px;box-shadow:14px 16px 0 #d0a57e}
- .photo-note{bottom:57px;left:0;padding:12px 18px;transform:rotate(0deg)}
- .photo-tabs{bottom:15px;right:20px}
- .intro h1{margin:13px 0 15px;font-size:clamp(40px,10vw,62px);line-height:1.08}
- .intro>p{margin:0 0 12px;line-height:1.6}
- .micro{margin-top:20px;padding-top:7px}
-}
-@media(max-width:380px){.hero .picture{height:333px;min-height:333px}.hero .photo-frame{height:288px}.photo-note{bottom:54px}.intro h1{font-size:38px}}
