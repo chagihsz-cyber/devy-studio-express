@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  document.querySelectorAll('[data-photo]').forEach(btn=>btn.addEventListener('click',()=>{
   document.querySelectorAll('[data-photo]').forEach(el=>el.setAttribute('aria-pressed',String(el===btn)));
   $('hero-photo').src=btn.dataset.photo;
+  $('hero-photo').alt=btn.getAttribute('aria-label').replace('Mostrar foto','Foto')+' — imagem ilustrativa';
  }));
  $('send').addEventListener('click',()=>{if(!validate())return;window.open('https://api.whatsapp.com/send?text='+encodeURIComponent(copyLines()),'_blank','noopener,noreferrer');$('feedback').textContent='Solicitação preparada. Selecione o contato da Lasanha+ no WhatsApp.';});
  $('copy').addEventListener('click',async()=>{

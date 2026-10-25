@@ -12,3 +12,43 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;align-
 @media(max-width:740px){.header{height:72px}.header-note{display:none}.hero{grid-template-columns:1fr}.intro{padding:65px 6vw 45px}.intro h1{font-size:clamp(54px,11vw,80px)}.micro{margin-top:20px;padding-top:20px}.picture{min-height:500px}.photo-frame{height:400px;width:min(320px,75%)}.logic{padding:65px 6vw}.order{grid-template-columns:1fr;padding:60px 5vw}.order-title{padding:0}.order-shot{height:170px;max-width:280px;margin:28px 0 45px}.order-card{max-width:none;padding:28px}.logic-steps article{grid-template-columns:40px 1fr}.logic-steps article p{grid-column:2}}
 @media(max-width:420px){.header-link{font-size:10px;padding:10px}.mark{font-size:25px}.intro h1{font-size:50px}.picture{min-height:440px}.photo-frame{height:345px}.order-title h2{font-size:48px}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}}
+
+/* Impeccable — adaptação e acabamento sem descaracterizar o conceito editorial. */
+.skip-link{position:absolute;z-index:90;top:-80px;left:12px;padding:12px 18px;background:var(--paper);border:2px solid var(--red);color:var(--ink)}
+.skip-link:focus{top:12px}
+::selection{background:#d9543f;color:white}
+html{scroll-padding-top:24px}
+.intro h1,.logic-title h2,.order-title h2{letter-spacing:-.035em;text-wrap:balance}
+.intro>p,.order-title p{font-size:clamp(15px,1.35vw,17px);line-height:1.65}
+.order-card>p:not(.fine):not(.estimate),.logic-steps p{font-size:14px}
+.field-label,.order-card fieldset label,.order-card legend{font-size:14px}
+.header-link,.hero-cta,.photo-tabs button,.send,.copy{min-height:44px}
+.header-link,.hero-cta{display:inline-flex;align-items:center;justify-content:center}
+.photo-tabs button{width:44px;height:44px}
+.qty button{min-width:44px;min-height:44px}
+.qty button:disabled{opacity:.4;cursor:not-allowed}
+.order-card fieldset label{min-height:44px;display:flex;align-items:center;gap:9px}
+.order-card fieldset input{width:18px;height:18px;accent-color:var(--red)}
+.send:hover{background:#a92419}.copy:hover{background:#f2e4cf}
+:focus-visible{outline:3px solid var(--red);outline-offset:4px}
+@media(max-width:740px){
+ .intro h1{font-size:clamp(43px,11vw,72px);letter-spacing:-.035em}
+ .order-title h2{font-size:clamp(38px,9vw,64px)}
+ .picture{padding-inline:22px}
+ .order-card{padding:25px}
+ .fine{font-size:12px!important}
+}
+@media(max-width:370px){.header{gap:8px;padding-inline:12px}.header-link{padding:8px 11px;white-space:nowrap}.photo-note{left:0;padding:12px 17px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Impeccable: contraste AA e legenda sem letras miniaturizadas. */
+.mark small{font-size:11px;color:#644c3b}
+.header-note{font-size:11px}
+.header-link{font-size:12px}
+.note,.micro{font-size:11px}
+.micro{color:#755542}
+.order-card-top,.photo-note strong{font-size:11px}
+.price span{font-size:12px;color:#685142}
+.fine{font-size:12px!important;color:#705240!important}
+footer span,footer small{font-size:12px;color:#685044}
+@media(max-width:420px){.header-link{font-size:11px}}

@@ -17,3 +17,49 @@ footer{padding:40px 7vw;display:flex;justify-content:space-between;gap:15px;flex
 @media(max-width:880px){.flavor-stage{grid-template-columns:1fr 1fr}.flavor-side{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:55px 6vw}.flavor-options{margin-top:0;align-self:center}.flavor-intro h1{font-size:clamp(45px,7vw,68px)}.flavor-display{min-height:545px}.builder{min-height:545px;padding:44px 9%}.order{padding:75px 6vw;gap:5%}}
 @media(max-width:620px){.top nav a:not(:last-child){display:none}.top{padding:14px 5vw;min-height:75px}.top nav{gap:8px}.brand{font-size:21px}.flavor-stage{grid-template-columns:1fr}.flavor-side{display:block;padding:38px 6vw 28px}.flavor-intro h1{font-size:clamp(45px,12vw,65px)}.flavor-options{display:grid;grid-template-columns:1fr 1fr;column-gap:17px;margin-top:24px}.flavor-options button{font-size:17px;padding:14px 0}.flavor-display{min-height:530px}.flavor-display>img{width:min(85%,440px);max-height:440px}.builder{min-height:0;padding:43px 7vw}.builder h2{font-size:48px}.flavor-tape{justify-content:flex-start}.order{grid-template-columns:1fr;padding:65px 6vw}.order-title h2{font-size:60px}.mini-bottles{margin:27px 0 40px}.receipt{padding:25px 22px}footer{display:block}footer span,footer small{display:block;margin-top:12px}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.flavor-display,.flavor-display>img{transition:none}}
+
+/* Impeccable — navegação móvel completa, foco, leitura e toque. */
+.skip-link{position:absolute;top:-80px;left:12px;padding:12px 16px;border:2px solid var(--accent);background:#fff;z-index:90}
+.skip-link:focus{top:9px}
+::selection{background:var(--dark);color:white}
+html{scroll-padding-top:16px}
+.flavor-intro h1,.builder h2,.order-title h2{letter-spacing:-.035em;text-wrap:balance}
+.flavor-intro>p,.builder>p,.order-title>p{font-size:clamp(14px,1.2vw,17px);line-height:1.65}
+.toppings label{min-height:44px;font-size:14px}
+.toppings label input{width:20px;height:20px}
+.counter button{min-width:44px;height:44px}
+.receipt-row button{min-width:44px;min-height:44px}
+.top nav a{min-height:44px;display:inline-flex;align-items:center;white-space:nowrap}
+.flavor-options button{min-height:50px}
+.add,.send,.copy{min-height:48px}
+.stage-price{background:var(--dark)}
+.stage-price strong{color:white}
+:focus-visible{outline:3px solid var(--dark);outline-offset:4px}
+@media(max-width:620px){
+ .top{flex-wrap:wrap;row-gap:4px}
+ .top nav{display:flex;width:100%;gap:8px;overflow-x:auto;scrollbar-width:thin;justify-content:space-between}
+ .top nav a:not(:last-child){display:inline-flex}
+ .top nav a{font-size:12px;padding:8px 5px;min-height:44px}
+ .flavor-intro h1{letter-spacing:-.035em}
+ .order-title h2{font-size:clamp(41px,12vw,58px)}
+ .fine{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){.flavor-display>img{transform:none!important}}
+
+/* Impeccable: contraste verificável nos rótulos e botões sem perder a paleta doce. */
+.brand small{font-size:11px;color:#654657}
+.sticker{font-size:11px;color:#922448}
+.flavor-intro h1 em,.builder h2 em,.order-title h2 em{color:var(--dark)}
+.flavor-intro>p,.builder>p{color:#674858}
+.flavor-options button .number,.flavor-options button[aria-pressed=true] .number{font-size:11px;color:#705365}
+.flavor-options button[aria-pressed=true]{color:var(--dark)}
+.rotate-label{font-size:12px}
+.stage-price{font-size:11px}
+.display-footer span{font-size:11px}
+.builder-header,.serving span,.order-title>span{font-size:11px;color:#71405a}
+.flavor-tape{background:#aa2758}
+.receipt .empty{color:#674d5a}
+.receipt-row small{font-size:12px;color:#6e4c5f}
+.receipt .fine,.fine{font-size:12px;color:#72505e}
+footer span,footer small{font-size:12px;color:#72505e}
+.add:hover{background:var(--dark);filter:brightness(.94)}

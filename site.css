@@ -114,3 +114,24 @@
 .product-story{position:relative;overflow:hidden;isolation:isolate;contain:paint}
 .story-graphic{isolation:isolate;contain:paint}
 @media(max-width:800px){.story-graphic{perspective:none}.story-icon{animation:none!important;transform:none!important}}
+
+/* Impeccable — acabamento do sistema C.B.S. aprovado; sem trocar identidade. */
+:root{--focus-ring:#78e9bb}
+::selection{background:#17654e;color:#fff}
+:where(button,a,input,select,textarea):focus-visible{outline:3px solid var(--focus-ring);outline-offset:4px}
+:where(.btn,.tile-action,.mini-links a,.filter){touch-action:manipulation}
+.hero h1,.pagehero h1,.section h2,.capability h3{letter-spacing:-.035em;text-wrap:balance}
+.hero p,.section p{overflow-wrap:break-word}
+.model-exhibit img{transform:none}
+@media(max-width:680px){
+ .model-exhibit{min-height:355px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 23%,#194a48,#081b2a 75%)}
+ .model-exhibit img{width:min(64%,225px);height:290px;object-fit:contain;object-position:50% 35%}
+ .model-exhibit.landscape-exhibit img{width:min(75%,265px);height:auto;max-height:240px;object-fit:contain}
+ .model-exhibit figcaption{width:100%;padding:45px 20px 18px}
+ .model-exhibit figcaption strong{font-size:25px}
+ .gallery-tools{scroll-padding-left:16px}
+}
+@media(prefers-reduced-motion:reduce){.model-exhibit:hover img{transform:none!important}}
+
+/* Impeccable: aviso informativo com uma borda discreta, não um side-tab decorativo. */
+.notice{border-left-width:1px}
