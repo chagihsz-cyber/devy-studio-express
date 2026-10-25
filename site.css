@@ -69,3 +69,29 @@
 @media(prefers-reduced-motion:reduce){.hero-visual-halo,.model-float,.product-float,.story-icon{animation:none!important}.model-exhibit img,.capability{transition:none!important}}
 
 @media(min-width:990px){.model-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.landscape-exhibit{grid-column:auto;min-height:450px}.landscape-exhibit img{height:465px}}
+
+/* Componente de navegação responsiva acessível */
+.mobile-menu-toggle{display:none;align-items:center;justify-content:center;flex-direction:column;gap:5px;width:45px;height:43px;border-radius:10px;background:#ffffff15;border:1px solid #ffffff50;color:#fff;cursor:pointer}
+.mobile-menu-toggle span{display:block;height:2px;width:21px;background:#e6fff3;transition:transform .18s,opacity .18s}
+@media(max-width:800px){
+  .site-header .header-inner{min-height:67px;padding:9px 0;display:flex;flex-direction:row;align-items:center;position:relative;gap:10px}
+  .site-header .brand img{height:43px;width:58px}.site-header .brand span{font-size:19px}.site-header .brand small{font-size:9px}
+  .mobile-menu-toggle{display:flex;flex-shrink:0;margin-left:auto}
+  .site-header .nav{display:none;position:absolute;top:calc(100% + 1px);left:0;right:0;background:#0a2231;box-shadow:0 19px 28px #0017235e;border:1px solid #ffffff20;border-radius:0 0 17px 17px;padding:10px;max-height:min(70vh,530px);overflow-y:auto;z-index:50;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:3px}
+  .site-header.menu-open .nav{display:flex}
+  .site-header .nav a{display:block;font-size:15px;line-height:1.2;padding:12px 14px;border-radius:8px}
+  .site-header .nav .nav-cta{margin-left:0;background:#1d9b7a;text-align:center}
+  .site-header.menu-open .mobile-menu-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .site-header.menu-open .mobile-menu-toggle span:nth-child(2){opacity:0}
+  .site-header.menu-open .mobile-menu-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+}
+@media(prefers-reduced-motion:reduce){.mobile-menu-toggle span{transition:none}}
+
+/* Filtros de galeria: uma linha navegável com o dedo no mobile */
+.gallery-tools{scrollbar-width:thin;scrollbar-color:#8ebdad transparent}
+.gallery-tools .filter{flex:0 0 auto}
+@media(max-width:800px){
+  .gallery-tools{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x proximity;padding-bottom:9px;margin-left:-16px;margin-right:-16px;padding-left:16px;padding-right:16px}
+  .gallery-tools .filter{scroll-snap-align:start;min-height:46px;white-space:nowrap}
+  .model-exhibit img{object-position:50% 27%}
+}
